@@ -23,13 +23,22 @@
   
   
     <h1 class = "text-center" "mx-auto">Shubhda Datta</h1>
-    <h2 class = "text-center" "mx-auto">Welcome to the DS and ML Course</h2>
+    <h2 class = "text-center" "mx-auto">Python, SQL, DataScience, Machine Learning, Deep Learning</h2>
       <img class="rounded mx-auto d-block" id ="banner" src ="https://testwebdev.shubhdadatta.repl.co/static/portfolio-banner.jpg" >
     
-    <h2 class = "text-center" "mx-auto">Topics</h2>
-    <p class="lead">A simple page put together using HTML. <em>I said a simple page put together using HTML.</em> A simple page put together using HTML. A simple page put together using HTML. A simple page put together using HTML. A simple page put together using HTML. A simple page put together using HTML. A simple page put together using HTML. A simple page put together using HTML.      </p>
-    
-    
+    <h2 class = "text-center" "mx-auto">Projects</h2>
+  <div>
+{% for project in Projects%}
+    {{project}}
+    {% endfor %}
+  </div>
+  
+    <h2 class = "text-center" "mx-auto">Certifications</h2>
+    <div>
+      {% for certificates in Certificates%}
+      {{certificates}}
+    {% endfor %}
+    </div>
     <h2  class = "text-center" "mx-auto">Let's get started.</h2>                                                    
     <div class="text-center"> 
       <button type="button" class="btn btn-primary btn-lg"">Project</button>
